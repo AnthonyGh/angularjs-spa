@@ -1,0 +1,14 @@
+<div class="page-header">
+	<h2 class="text-center"><strong class="text-uppercase">Passerà Angular 4</strong></h2>
+</div>
+
+
+<div ng-repeat="video in videos | orderBy: 'id'"  style="padding:20px">
+    <div>
+    	<h3>{{video.title}}</h3>
+       <iframe width="560" height="315" ng-src="{{video.url | trusted}}" 
+         frameborder="0" allowfullscreen></iframe>
+        <p>Lien : <a ng-href="{{video.url | trusted}}" target="_blank">{{video.url | trusted}}</a></p>
+        <hr>
+    </div>
+</div>

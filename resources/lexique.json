@@ -1,0 +1,19 @@
+{
+  "lexique": [
+    {
+      "word":"Algorithmique",
+      "letter": "a",
+      "definition": "Etude de la résolution de problèmes par la mise en oeuvre de suites d'opérations élémentaires selon un processus défini aboutissant à une solution."
+    },
+    {
+      "word":"Balise",
+      "letter": "b",
+      "definition": "Dans un langage de description de documents, marque destinée à l'identification, la description ou la mise en forme d'un élément de document."
+    },
+    {
+      "word":"Hachage",
+      "letter": "h",
+      "definition": "1. Opération consistant à déterminer une information de taille fixe et réduite à partir d’une donnée de taille indifférente, de telle façon que deux données quelconques aient une faible probabilité de produire le même résultat."
+    }
+  ]
+}

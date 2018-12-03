@@ -1,0 +1,10 @@
+<div class="page-header">
+	<h2 class="text-center"><strong class="text-uppercase">Lexique informatique</strong></h2>
+</div>
+
+
+<div ng-repeat="l in myLexique | orderBy: 'id'"  style="padding:10px">
+    <div>
+    	<strong>{{ l.word | uppercase }}</strong> : {{ l.definition }}
+    </div>
+</div>

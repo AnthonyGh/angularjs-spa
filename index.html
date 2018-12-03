@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html id="top">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.0/angular.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.0/angular-animate.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" /> -->
+
+<script src="js/angular.min.js"></script>
+<script src="js/angular-ui-router.min.js"></script>
+<script src="js/angular-animate.js"></script>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" />
+<link rel="stylesheet" href="css/font-awesome.min.css" />
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+
+
+<script src="apps/app.js"></script>
+<script src="configs/configRouter.js"></script>
+
+<script src="factories/videosFactory.js"></script>
+
+<script src="controllers/appController.js"></script>
+
+<script src="filters/filterYoutubeVideos.js"></script>
+<script src="services/scriptNote.js"></script>
+
+
+<title>Single Page Application en AngularJS</title>
+
+
+</head>
+<body ng-app="app">
+
+
+
+<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" ui-sref="introduction">Démo AngularJS SPA</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" ui-sref="introduction">Accueil <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" ui-sref="videos">Vidéos</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Autres
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        	<h6 class="dropdown-header">Annexes</h6>
+                  
+          <a class="dropdown-item" ui-sref="lexique">Lexique Informatique</a>
+           <div class="dropdown-divider"></div>
+           <h6 class="dropdown-header">Liens externes</h6>
+           <a class="dropdown-item" href="https://www.w3schools.com/" target="_blank">w3schools.com/</a>          
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+
+
+
+<div class="container">
+
+<div class="jumbotron text-center">
+	<h1>Single Page Application avec AngularJS</h1>
+	<p>et Bootstrap 4</p>
+</div>
+
+<div class="row">
+    <div class="col-sm-4">
+    	<nav class="sticky-left">
+			<ul class="list-group">
+              <li class="list-group-item"><a ui-sref="introduction">Introduction</a></li>
+            	<li class="list-group-item"><a ui-sref="partie-1">Partie 1</a></li>
+              <li class="list-group-item"><a ui-sref="partie-2">Partie 2</a></li>
+              <li class="list-group-item"><a ui-sref="partie-3">Partie 3</a></li>
+            </ul>
+		</nav>
+	</div>
+
+    <div class="col-sm-8">
+    
+     <div ui-view></div>
+     
+    <span class="fin-para">&#10070;</span>
+		<hr>
+		
+
+
+    </div>
+  
+  </div>
+
+</div>
+
+<div class="scrollTop" id="scroll"><a href="#top"><i class="fa fa-angle-double-up"></i></a></div>
+    
+
+
+    
+
+
+
+<footer>
+<div class="container">
+
+<div class="row">
+    <div class="col-sm-4">
+    	<ul class="list-unstyled">
+			<p><strong>Technologies utilisées :</strong></p>
+			<li>AngularJS</li>
+			<li>Bootstrap</li>
+			<li>JQuery</li>
+			<li>HTML5 / CSS3</li>
+		</ul>
+    </div>
+    <div class="col-sm-8">
+    	<p>Site entièrement réalisé par Anthony Ghelfo</p>
+    </div>
+</div>
+
+
+	</div>	
+
+</footer>
+
+</body>
+</html>

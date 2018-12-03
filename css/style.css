@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i');
+@import url('https://fonts.googleapis.com/css?family=Cabin+Condensed:400,500,600,700');
+
+body{
+	font-family: 'Lato';
+	font-size: 16px;
+	padding-top: 70px;
+}
+
+a{
+    color:rgb(51, 122, 183);
+}
+
+i{
+	margin-right: 10px;
+}
+
+/*jumbotron*/
+
+.jumbotron h1{
+    font-size:48px;
+}
+
+.jumbotron p{
+    font-weight:300;
+}
+
+
+.page-header{
+    padding-bottom: 9px;
+margin: 40px 0 20px;
+border-bottom: 1px solid #eee;
+}
+
+/* leftmenu */
+.sticky-left {
+    position: -webkit-sticky;
+    position: sticky;
+      top: 70px;
+  }
+
+
+/* Animation tooltip */
+.tooltip{
+    position: relative;
+    font-weight: bold;
+    opacity: 1;
+    display: inline;
+    cursor: pointer;
+    z-index: 9;
+    color: rgb(51, 122, 183)!important;
+}
+
+
+
+.tooltiptext{
+	display: none;
+z-index: 99;
+	width:100%;
+	position: fixed;
+	padding: 20px;
+	background:rgba(0,0,0,0.9);
+	color:white;
+	bottom:0px;
+	right:0px;
+	margin-bottom: 0px;
+}
+
+
+
+.croix{
+	position:absolute;
+	right:15px;
+	top:5px;
+	cursor:pointer;
+}
+
+.no-drop {cursor: no-drop;}
+
+blockquote.blockquote{
+	font-size: 16px;
+	padding: 10px 20px;
+    margin: 0 0 20px;
+    border-left: 5px solid #eee;
+}
+blockquote.blockquote footer{
+	text-align: right;
+	padding-top: 0px;
+	background:none;
+	margin-top: 0px;
+	padding: 0px;
+}
+
+
+.fin-para{
+	font-size: 26px;
+	text-align: center;
+	display: block;
+	color: rgb(51, 122, 183);
+	margin-bottom: 30px;
+}
+
+
+
+.scrollTop{
+	display: block;
+	position: fixed;
+	bottom:10px;
+	background:#1A1A1A;
+	border-radius: 10%;
+	padding: 10px;
+	right:10px;
+}
+.scrollTop .fa{
+	color:white;
+	margin:0 auto;
+	padding: 10px 20px;
+}
+
+/* footer */
+
+footer{
+	
+	margin:0px;
+	background:#eee;
+	
+	margin-top: 50px;
+	padding:20px;
+}
+
+
+/* ng-animate */
+
+.ng-enter {
+  transition: all 0.3s;
+  opacity: 0; }
+.ng-enter-active {
+  opacity: 1; }
+.ng-leave {
+  transition: all 0.3s;
+  opacity: 1; }
+.ng-leave-active {
+  opacity: 0; }
